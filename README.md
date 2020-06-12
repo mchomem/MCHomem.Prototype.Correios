@@ -7,3 +7,11 @@ The solutions in [Stackoverflow Display a image in a console application](https:
 
 
 * [Correios](https://www.correios.com.br/) Brazilian Post and Telegraph Company (ECT), or simply Correios.
+
+## Screenshots
+
+![Initial screen](/docs/img/ws-correios.png)
+
+![Input zip code](/docs/img/ws-correios-input-zip-code.png)
+
+![Output](/docs/img/ws-correios-output.png)

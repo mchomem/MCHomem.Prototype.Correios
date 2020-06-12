@@ -78,36 +78,38 @@ namespace MCHomem.Prototype.Correios.ConsoleApp
 
                 Console.WriteLine("Consultation in progress...\n");
 
+                Int32 margin = 20;
+
                 // Mapped object from the Correios Webservice.
                 AtendeClienteService correios = new AtendeClienteService();
                 Address address = TransferToModelObject(correios.consultaCEP(cep));
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("Address:".PadRight(10, ' '));
+                Console.Write("Address:".PadRight(margin, ' '));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write(address.PulicPlace);
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("Neighborhood:".PadRight(10, ' '));
+                Console.Write("Neighborhood:".PadRight(margin, ' '));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write(address.Neighborhood);
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("Zip Code:".PadRight(10, ' '));
+                Console.Write("Zip Code:".PadRight(margin, ' '));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write(address.ZipCode);
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("City:".PadRight(10, ' '));
+                Console.Write("City:".PadRight(margin, ' '));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write(address.City);
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("Federation Unity:".PadRight(10, ' '));
+                Console.Write("Federation Unity:".PadRight(margin, ' '));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write(address.FederationUnity);
                 Console.WriteLine();
